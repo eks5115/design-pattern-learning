@@ -6,4 +6,7 @@ package com.xrotor.create.factorymethod;
  * @date 2016/7/24
  */
 public interface Product {
+    String A = "A";
+    String B = "B";
+    String getName();
 }
