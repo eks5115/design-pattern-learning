@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.x_rotor.action.chain_of_responsibility</OriginalElement>
+  <nodes>
+    <node x="167.5" y="0.0">com.x_rotor.action.chain_of_responsibility.Filter</node>
+    <node x="133.0" y="79.0">com.x_rotor.action.chain_of_responsibility.ApplicationFilter</node>
+    <node x="300.0" y="79.0">com.x_rotor.action.chain_of_responsibility.AgeFilter</node>
+    <node x="0.0" y="79.0">com.x_rotor.action.chain_of_responsibility.NameFilter</node>
+    <node x="34.5" y="153.0">com.x_rotor.action.chain_of_responsibility.FilterChain</node>
+    <node x="227.0" y="232.0">com.x_rotor.action.chain_of_responsibility.HttpResponse</node>
+    <node x="241.0" y="153.0">com.x_rotor.action.chain_of_responsibility.Response</node>
+    <node x="171.0" y="306.0">com.x_rotor.action.chain_of_responsibility.Demo</node>
+    <node x="14.0" y="306.0">com.x_rotor.action.chain_of_responsibility.Request</node>
+    <node x="0.0" y="385.0">com.x_rotor.action.chain_of_responsibility.HttpRequest</node>
+    <node x="0.0" y="232.0">com.x_rotor.action.chain_of_responsibility.ApplicationFilterChain</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.x_rotor.action.chain_of_responsibility.ApplicationFilterChain" target="com.x_rotor.action.chain_of_responsibility.FilterChain">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.x_rotor.action.chain_of_responsibility.HttpResponse" target="com.x_rotor.action.chain_of_responsibility.Response">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.x_rotor.action.chain_of_responsibility.ApplicationFilter" target="com.x_rotor.action.chain_of_responsibility.Filter">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.x_rotor.action.chain_of_responsibility.AgeFilter" target="com.x_rotor.action.chain_of_responsibility.Filter">
+      <point x="0.0" y="-14.5" />
+      <point x="351.0" y="54.0" />
+      <point x="232.5" y="54.0" />
+      <point x="26.0" y="14.5" />
+    </edge>
+    <edge source="com.x_rotor.action.chain_of_responsibility.HttpRequest" target="com.x_rotor.action.chain_of_responsibility.Request">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.x_rotor.action.chain_of_responsibility.NameFilter" target="com.x_rotor.action.chain_of_responsibility.Filter">
+      <point x="0.0" y="-14.5" />
+      <point x="56.5" y="54.0" />
+      <point x="180.5" y="54.0" />
+      <point x="-26.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9331797235023042" x="201.0" y="207.0" />
+  <SelectedNodes>
+    <node>com.x_rotor.action.chain_of_responsibility.NameFilter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
