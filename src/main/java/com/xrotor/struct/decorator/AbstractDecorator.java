@@ -1,12 +1,13 @@
 package com.xrotor.struct.decorator;
 
 /**
- * Created by Chen_Sen on 2016/8/9.
+ *
+ * @author eks5115
  */
-public abstract class Decorator implements Component{
+public abstract class AbstractDecorator implements Component{
     private Component component;
 
-    public Decorator(Component component) {
+    AbstractDecorator(Component component) {
         this.component = component;
     }
 

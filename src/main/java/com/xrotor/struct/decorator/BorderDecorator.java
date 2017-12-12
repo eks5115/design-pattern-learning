@@ -1,9 +1,10 @@
 package com.xrotor.struct.decorator;
 
 /**
- * Created by Chen_Sen on 2016/8/9.
+ *
+ * @author eks5115
  */
-public class BorderDecorator extends Decorator {
+public class BorderDecorator extends AbstractDecorator {
 
     private int width;
 
