@@ -1,4 +1,4 @@
-package com.xrotor.struct;
+package com.xrotor.struct.decorator;
 
 import com.xrotor.struct.decorator.BorderDecorator;
 import com.xrotor.struct.decorator.Component;
@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * @author eks5115
  */
-public class Decorator {
+public class DecoratorTest {
     @Test
     public void mainTest() {
         TextView textView = new TextView();
