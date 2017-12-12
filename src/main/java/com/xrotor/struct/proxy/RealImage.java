@@ -1,7 +1,8 @@
 package com.xrotor.struct.proxy;
 
 /**
- * Created by Chen_Sen on 2016/7/20.
+ *
+ * @author eks5115
  */
 public class RealImage implements Image {
 

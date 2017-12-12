@@ -1,10 +1,13 @@
 package com.xrotor.struct.proxy;
 
+import org.junit.Test;
+
 /**
- * Created by Chen_Sen on 2016/7/20.
+ * @author eks5115
  */
-public class ProxyDemo {
-    public static void main(String[] args){
+public class ProxyTest {
+    @Test
+    public void mainTest() {
         Image image = new ProxyImage("10.jpg");
 
         image.display();
