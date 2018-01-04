@@ -1,7 +1,8 @@
-package com.xrotor.action.chain_of_responsibility;
+package com.xrotor.action.chainofresponsibility;
 
 /**
- * Created by eks5115 on 2017/9/20.
+ *
+ * @author eks5115
  */
 public class Demo {
     public static void main(String[] args) {

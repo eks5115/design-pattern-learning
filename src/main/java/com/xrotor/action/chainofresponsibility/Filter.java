@@ -1,8 +1,7 @@
-package com.xrotor.action.chain_of_responsibility;
+package com.xrotor.action.chainofresponsibility;
 
 /**
  * @author eks5115
- * @date 2017/9/20
  */
 public interface Filter {
 

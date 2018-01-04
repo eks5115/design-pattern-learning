@@ -1,15 +1,16 @@
-package com.xrotor.action.chain_of_responsibility;
+package com.xrotor.action.chainofresponsibility;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by eks5115 on 2017/9/20.
+ *
+ * @author eks5115
  */
-public class ApplicationFilterChain implements FilterChain {
+public class ApplicationFilterChain extends ApplicationFilter implements FilterChain {
 
 
-    List<Filter> filters = new ArrayList<>();
+    private List<Filter> filters = new ArrayList<>();
 
     /**
      *
@@ -18,8 +19,10 @@ public class ApplicationFilterChain implements FilterChain {
 
     @Override
     public void doFilter(Request request, Response response) {
-        if (pos == filters.size())
+        if (pos == filters.size()) {
             return;
+        }
+
         filters.get(pos++).doFilter(request, response, this);
     }
 
