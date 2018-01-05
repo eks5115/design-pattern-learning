@@ -1,0 +1,97 @@
+@startuml
+
+
+interface Vehicle {
+{abstract} float getSpeed()
+}
+
+abstract AbstractVehicle {
+-float speed
+-Person driver
+-Power power
+-Tire tire
+-ProtectiveDevice protectiveDevice
++float getSpeed()
++Person getDriver()
++Power getPower()
++Tire getTire()
++ProtectiveDevice getProtectiveDevice()
+}
+
+abstract class MotorVehicle {
+}
+
+abstract class NonMotorVehicle {
+}
+
+class Car {
+
+}
+
+class Bus {
+}
+
+class Motorcycle {
+}
+
+class Bicycle {
+}
+
+
+abstract class Tire {
+-String type
++String getType()
+}
+
+class RoadTire {
+}
+
+class MountainTire {
+}
+
+abstract class ProtectiveDevice {
+}
+
+class SafetyClothing {
+}
+
+class Helmet {
+}
+
+abstract Person {
+}
+
+abstract class Power {
+}
+
+class Gasoline {
+}
+
+class Manpower {
+}
+
+
+Vehicle <|.. AbstractVehicle
+
+AbstractVehicle <|-- MotorVehicle
+AbstractVehicle <|-- NonMotorVehicle
+AbstractVehicle *-- Tire
+AbstractVehicle o-- ProtectiveDevice
+AbstractVehicle --> Person
+AbstractVehicle ..> Power
+
+MotorVehicle <|-- Car
+MotorVehicle <|-- Bus
+MotorVehicle <|-- Motorcycle
+NonMotorVehicle <|-- Bicycle
+
+Tire <|-- RoadTire
+Tire <|-- MountainTire
+
+ProtectiveDevice <|-- SafetyClothing
+ProtectiveDevice <|-- Helmet
+
+Power <|-- Gasoline
+Power <|-- Manpower
+
+@enduml
