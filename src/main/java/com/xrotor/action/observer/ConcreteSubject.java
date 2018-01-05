@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by eks5115 on 27/09/2017.
+ *
+ * @author eks5115
  */
 public class ConcreteSubject implements Subject {
 
@@ -31,11 +32,8 @@ public class ConcreteSubject implements Subject {
         return observerList.remove(observer);
     }
 
-    /**
-     *
-     */
     @Override
-    public void notify_() {
+    public void notifyObserver() {
         for (Observer observer:observerList) {
             observer.update(this);
         }

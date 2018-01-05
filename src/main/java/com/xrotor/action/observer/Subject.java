@@ -1,16 +1,39 @@
 package com.xrotor.action.observer;
 
 /**
- * Created by eks5115 on 27/09/2017.
+ *
+ * @author eks5115
  */
 public interface Subject {
+    /**
+     * set state
+     * @param state
+     */
     void setState(String state);
+
+    /**
+     * get state
+     * @return
+     */
     String getState();
 
+    /**
+     * add observer
+     * @param observer
+     */
     void attach(Observer observer);
+
+    /**
+     * remove observer
+     * @param observer
+     * @return
+     */
     boolean detach(Observer observer);
 
-    void notify_();
+    /**
+     * notify observer
+     */
+    void notifyObserver();
 
 
 }
