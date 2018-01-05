@@ -1,14 +1,13 @@
 package com.xrotor.action.observer;
 
 /**
- *
  * @author eks5115
  */
-public interface Observer {
+public interface Dispatcher {
 
     /**
-     * update(handle) subject
+     * dispatch subject
      * @param subject
      */
-    void update(Subject subject);
+    void dispatcher(Subject subject);
 }

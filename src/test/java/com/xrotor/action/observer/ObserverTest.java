@@ -2,6 +2,8 @@ package com.xrotor.action.observer;
 
 import org.junit.Test;
 
+import java.util.Observable;
+
 /**
  * @author eks5115
  * @date 11/12/2017
@@ -11,8 +13,10 @@ public class ObserverTest {
     public void test() {
         Subject subject = new ConcreteSubject();
         subject.setState("OK");
-        subject.attach(new ConcreteObserver());
 
-        subject.notifyObserver();
+        ConcreteObservable observable = new ConcreteObservable();
+        observable.addObserver(new ConcreteObserver());
+
+        observable.dispatcher(subject);
     }
 }

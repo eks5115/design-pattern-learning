@@ -17,23 +17,4 @@ public interface Subject {
      */
     String getState();
 
-    /**
-     * add observer
-     * @param observer
-     */
-    void attach(Observer observer);
-
-    /**
-     * remove observer
-     * @param observer
-     * @return
-     */
-    boolean detach(Observer observer);
-
-    /**
-     * notify observer
-     */
-    void notifyObserver();
-
-
 }

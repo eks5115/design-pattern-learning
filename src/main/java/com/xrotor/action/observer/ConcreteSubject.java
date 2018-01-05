@@ -10,7 +10,6 @@ import java.util.List;
 public class ConcreteSubject implements Subject {
 
     private String state = "";
-    private List<Observer> observerList = new ArrayList<>();
 
     @Override
     public void setState(String state) {
@@ -20,22 +19,5 @@ public class ConcreteSubject implements Subject {
     @Override
     public String getState() {
         return state;
-    }
-
-    @Override
-    public void attach(Observer observer) {
-        observerList.add(observer);
-    }
-
-    @Override
-    public boolean detach(Observer observer) {
-        return observerList.remove(observer);
-    }
-
-    @Override
-    public void notifyObserver() {
-        for (Observer observer:observerList) {
-            observer.update(this);
-        }
     }
 }
