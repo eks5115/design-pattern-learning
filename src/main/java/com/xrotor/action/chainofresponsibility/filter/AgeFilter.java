@@ -1,10 +1,15 @@
-package com.xrotor.action.chainofresponsibility;
+package com.xrotor.action.chainofresponsibility.filter;
+
+import com.xrotor.action.chainofresponsibility.servlet.FilterChain;
+import com.xrotor.action.chainofresponsibility.http.Request;
+import com.xrotor.action.chainofresponsibility.http.Response;
+import com.xrotor.action.chainofresponsibility.servlet.Filter;
 
 /**
  *
  * @author eks5115
  */
-public class AgeFilter implements Filter{
+public class AgeFilter implements Filter {
     @Override
     public void doFilter(Request request, Response response, FilterChain chain) {
         String content = request.getContent();

@@ -1,4 +1,7 @@
-package com.xrotor.action.chainofresponsibility;
+package com.xrotor.action.chainofresponsibility.servlet;
+
+import com.xrotor.action.chainofresponsibility.http.Request;
+import com.xrotor.action.chainofresponsibility.http.Response;
 
 /**
  * @author eks5115

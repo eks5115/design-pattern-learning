@@ -1,10 +1,10 @@
-package com.xrotor.action.chainofresponsibility;
+package com.xrotor.action.chainofresponsibility.http;
 
 /**
  *
  * @author eks5115
  */
-public class HttpResponse implements Response {
+public class HttpRequest implements Request {
 
     /**
      *

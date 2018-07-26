@@ -1,4 +1,4 @@
-package com.xrotor.action.chainofresponsibility;
+package com.xrotor.action.chainofresponsibility.http;
 
 /**
  *

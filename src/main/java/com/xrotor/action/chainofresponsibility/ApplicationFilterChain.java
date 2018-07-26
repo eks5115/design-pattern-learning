@@ -1,5 +1,10 @@
 package com.xrotor.action.chainofresponsibility;
 
+import com.xrotor.action.chainofresponsibility.servlet.Filter;
+import com.xrotor.action.chainofresponsibility.servlet.FilterChain;
+import com.xrotor.action.chainofresponsibility.http.Request;
+import com.xrotor.action.chainofresponsibility.http.Response;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +12,7 @@ import java.util.List;
  *
  * @author eks5115
  */
-public class ApplicationFilterChain extends ApplicationFilter implements FilterChain {
+public class ApplicationFilterChain implements FilterChain {
 
 
     private List<Filter> filters = new ArrayList<>();
@@ -33,5 +38,9 @@ public class ApplicationFilterChain extends ApplicationFilter implements FilterC
     public ApplicationFilterChain addFilter(Filter filter) {
         filters.add(filter);
         return this;
+    }
+
+    void release() {
+        pos = 0;
     }
 }
