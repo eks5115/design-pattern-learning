@@ -14,7 +14,6 @@ import java.util.List;
  */
 public class ApplicationFilterChain implements FilterChain {
 
-
     private List<Filter> filters = new ArrayList<>();
 
     /**

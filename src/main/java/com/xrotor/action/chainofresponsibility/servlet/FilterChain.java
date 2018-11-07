@@ -10,8 +10,8 @@ import com.xrotor.action.chainofresponsibility.http.Response;
 public interface FilterChain {
     /**
      * doFilter
-     * @param request
-     * @param response
+     * @param request request
+     * @param response response
      */
     void doFilter(Request request, Response response);
 }

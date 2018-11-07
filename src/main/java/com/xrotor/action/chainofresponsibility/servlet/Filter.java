@@ -14,9 +14,6 @@ public interface Filter {
      * @param request  rule id
      * @param response page number
      * @param chain    json format context
-     * @return void
      */
-    default void doFilter(Request request, Response response, FilterChain chain) {
-
-    }
+    void doFilter(Request request, Response response, FilterChain chain);
 }
