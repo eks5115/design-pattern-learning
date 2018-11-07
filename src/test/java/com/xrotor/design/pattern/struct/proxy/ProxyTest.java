@@ -8,10 +8,7 @@ import org.junit.Test;
 public class ProxyTest {
     @Test
     public void mainTest() {
-        Image image = new ProxyImage("10.jpg");
-
-        image.display();
-        System.out.println("");
+        Image image = new ProxyImage("0.jpg");
 
         image.display();
     }
