@@ -4,6 +4,7 @@ package com.xrotor.design.pattern.struct.bridge;
  * @author eks5115
  */
 public class RefinedAbstraction extends Abstraction {
+
     public RefinedAbstraction(Implementor implementor) {
         super(implementor);
     }
