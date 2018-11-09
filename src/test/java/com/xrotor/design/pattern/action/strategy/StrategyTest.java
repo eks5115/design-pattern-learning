@@ -1,10 +1,14 @@
 package com.xrotor.design.pattern.action.strategy;
 
+import org.junit.Test;
+
 /**
- * Created by eks5115 on 2017/1/3.
+ * @author eks5115
  */
-public class StrategyDemo {
-    public static void main(String[] args) {
+public class StrategyTest {
+
+    @Test
+    public void test() {
         ConcreteStrategyA a = new ConcreteStrategyA();
         ConcreteStrategyB b = new ConcreteStrategyB();
         ConcreteStrategyC c = new ConcreteStrategyC();
@@ -17,6 +21,5 @@ public class StrategyDemo {
 
         context = new Context(c);
         context.contextInterface();
-
     }
 }

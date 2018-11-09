@@ -5,7 +5,7 @@ package com.xrotor.design.pattern.action.strategy;
  */
 public class ConcreteStrategyA implements Strategy {
     @Override
-    public void Algonrithmlnterface() {
+    public void algorithmInterface() {
         System.out.println("ConcreteStrategyA");
     }
 }

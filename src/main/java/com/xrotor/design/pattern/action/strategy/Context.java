@@ -14,6 +14,6 @@ public class Context {
     }
 
     public void contextInterface(){
-        strategy.Algonrithmlnterface();
+        strategy.algorithmInterface();
     }
 }

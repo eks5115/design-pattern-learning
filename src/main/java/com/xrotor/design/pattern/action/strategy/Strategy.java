@@ -1,8 +1,14 @@
 package com.xrotor.design.pattern.action.strategy;
 
 /**
- * Created by eks5115 on 2017/1/3.
+ *
+ * @author eks5115
+ * @date 2017/1/3
  */
 public interface Strategy {
-    void Algonrithmlnterface();
+
+    /**
+     * algorithmInterface
+     */
+    void algorithmInterface();
 }
